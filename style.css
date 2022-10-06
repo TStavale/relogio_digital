@@ -68,12 +68,6 @@ body {
     text-transform: uppercase;
 }
 
-#time .ap{
-    position: relative;
-    font-size: 1em;
-    transform: translate(-20px);
-}
-
 .dot{
     position: absolute;
     width: 100%;
