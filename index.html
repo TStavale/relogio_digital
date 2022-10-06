@@ -8,20 +8,33 @@
     <title>RELÓGIO DIGITAL</title>
 </head>
 <body>
-    <div id="relogio">
-        <div class="circulo">
-            <span id="hora">00</span>
+    <div id="time">
+        <div class="circle" style="--clr:#ff2972;">
+            <div class="dot hora_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="hh"></circle>
+            </svg>
+            <div id="hora">00</div>
         </div>
-
-        <div class="circulo">
-            <span id="minuto">00</span>
+        <div class="circle" style="--clr:#fee800;">
+            <div class="dot min_dot"></div>            
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="mm"></circle>
+            </svg>
+            <div id="minuto">00</div>
         </div>
-
-        <div class="circulo">
-            <span id="segundo">00</span>
+        <div class="circle" style="--clr:#04fc43;">
+            <div class="dot seg_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="ss"></circle>
+            </svg>
+            <div id="segundo">00</div>
         </div>
         <div class="ap">
-            <div class="ampm">PM</div>
+            <div id="ampm">PM</div>
         </div>
     </div>
     
