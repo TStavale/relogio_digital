@@ -1,0 +1,33 @@
+@media (min-width: 370px) {
+    #time{
+        width: 400px;
+        height: 700px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        
+
+    }
+    .title {
+        top: 90px;   
+    }
+    
+    hr {
+        border: 0;
+        height: 2px;
+        width: 300px;
+        position: absolute; 
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -10200%);
+        background-image: linear-gradient(to right, transparent, var(--tertiary-color), transparent);
+        z-index: 15;
+    }
+
+    .button-dark-light {
+        margin: 20px 30px;
+    }
+    
+}

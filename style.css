@@ -38,6 +38,7 @@ body {
     right: 0;
     top: 0;
     margin: 40px 70px;
+    z-index: 110;
 
 }
 
@@ -122,10 +123,6 @@ hr {
     border-radius: 20px;
     backdrop-filter: blur(10pz);
     filter: drop-shadow(10px 10px 40px #000000 );
-}
-
-#time.light {
-    background: rgb(176, 211, 148);
 }
 
 #time .circle {
