@@ -1,3 +1,4 @@
+/*Relógio Digital*/
 setInterval(()=>{
     let hora = document.getElementById('hora');
     let minuto = document.getElementById('minuto');
@@ -34,5 +35,14 @@ setInterval(()=>{
     min_dot.style.transform = `rotate(${m * 6}deg)`;
     seg_dot.style.transform = `rotate(${s * 6}deg)`;
 
+
+})
+
+/* Button Dark/Light */
+
+const chk = document.getElementById('chk')
+
+chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark-theme')
 
 })
