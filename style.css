@@ -3,12 +3,14 @@
     --primary-color: linear-gradient(rgba(182, 29, 29, 0.788), #3b1c1c);/*var(--primary-color)*/
     --secondary-color: #413131;/*var(--secondary-color)*/
     --tertiary-color: white; /*var(--tertiary-color)*/
+    --quaternary-color: black; /*var(--quaternary-color)*/
 }
 
 .dark-theme{
     --primary-color: linear-gradient(#e6ee79, #fff );
     --secondary-color: rgb(176, 211, 148);
     --tertiary-color: rgb(14, 13, 13);
+    --quaternary-color: white;
 }
 
 
@@ -194,3 +196,105 @@ hr {
     box-shadow: 0 0 20px var(--clr);
 }
 
+
+/*Cronometro*/
+
+#btn {
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: -95px;
+    left: 100px;
+    width: 300PX;
+}
+
+.checkbox-label {
+    display: block;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.btn-label {
+    display: flex;
+    width: 300px;
+}
+
+
+.open-crono {
+    display: none;
+}
+
+.label-crono {
+    background: var(--tertiary-color);
+    color: var(--quaternary-color);
+    border-radius: 5px;
+    height: 30px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    position: relative;
+    right: 10px;
+    margin-bottom: 5px;
+
+}
+
+.label-crono:hover{
+    cursor: pointer;
+    box-shadow: 5px 0px 9px #f8f8f5;
+}
+
+button {
+    height: 50px;
+    width: 90px;
+    border: none;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.timer-crono {
+    display: flex;
+    width: 80px;
+    height: 50px;
+    font-size: 40px;
+    color: var(--tertiary-color);
+    position: relative;
+    margin-bottom: 5px;
+ 
+}
+
+.btn-crono {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    right: 95px;
+
+}
+
+.start-btn {
+    background-color: rgb(29, 190, 29);
+
+}
+
+.pause-btn {
+    background-color: rgb(137, 141, 137);
+}
+
+.stop-btn {
+    background-color: rgb(233, 36, 36);
+}
+
+/*Esconder o cronômetro*/
+
+.check-input {
+    display: none;
+}
+
+.check-input:checked + .checkbox-label .open-crono {
+    display: block ;
+}
