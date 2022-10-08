@@ -265,6 +265,7 @@ button:hover {
     color: var(--tertiary-color);
     position: relative;
     margin-bottom: 5px;
+    right: 23px;
  
 }
 

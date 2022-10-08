@@ -40,41 +40,63 @@ setInterval(()=>{
 
 /* Button Dark/Light */
 
-const chk = document.getElementById('chk')
+const chk = document.getElementById('chk');
 
 chk.addEventListener('change', () => {
-    document.body.classList.toggle('dark-theme')
+    document.body.classList.toggle('dark-theme');
 
 })
 
 
 /*Cronômetro*/
 
-var sec=0
-var min=0
-var interval
+var sec=0;
+var min=0;
+var hr=0;
 
+var interval;
+
+var isRunnig = false
+
+function twoDigits(digit){
+    if(digit<10 ){
+        return('0'+digit)
+    }else{
+        return(digit)
+    }
+}
 
 function start(){
-    interval= setInterval(counter,100)
+    if(!isRunnig) {             /*(!isRnning) assim é igual assim (isRunnig === false() */
+        counter();
+        interval= setInterval(counter,1000);
+    }
+    isRunnig = true;
 }
 
 function pause(){
-    clearInterval(interval)
+    clearInterval(interval);
+    isRunnig = false;
 }
 
 function stop(){
-    clearInterval(interval)
-    sec=0
-    min=0
-    document.getElementById('counter').innerText='00:00'
+    clearInterval(interval);
+    sec=0;
+    min=0;
+    document.getElementById('counter').innerText='00:00:00';
+    isRunnig = false;
 }
 
+
 function counter(){
-    sec++
+    sec++;
     if(sec==60){
         min++
         sec=0
+        if(min==60){
+            min=0
+            hr++
+        }
     }
-    document.getElementById('counter').innerText=min+':'+sec
+    document.getElementById('counter').innerText=twoDigits(hr)+':'+twoDigits(min)+':'+twoDigits(sec)
 }
