@@ -6,8 +6,8 @@ Criar um relógio digital utilizando html, css e javaScript. Acrescentei um cron
 
 <h2> RESULTADO</h2>
 
-<img src="./relógio1.png">
-<img src="./relógio2.png">
+<img src="./img/relógio1.png">
+<img src="./img/relógio2.png">
 
 <h2>ACESSE</h2>
 
